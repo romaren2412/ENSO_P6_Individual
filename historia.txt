@@ -48,3 +48,22 @@
 [15] git commit -m "Actualización do proceso á versión v3. Reestruturación das carpetas á v3. [Paso 11 de TrabajoIndividual.pdf]"
 
 ---------------------------------------------------------------------------
+
+[16] git tag -a R3 -m "Versión R3 [Paso 11 de TrabajoIndividual.pdf]"
+
+[17] git remote add origin https://github.com/romaren2412/ENSO_P6_Individual.git
+[18] git push origin master
+[19] git push origin --tags
+
+----------------------------------------------------------------------------
+
+[20] git pull origin master
+
+(Modificase historia.txt)
+
+[21] git diff historia.txt
+
+(Móstranse as diferencias)
+
+[22] git commit -a -m "Actualización final do repositorio. [Paso 15 de TrabajoIndividual.pdf]"
+[23] git push origin master
