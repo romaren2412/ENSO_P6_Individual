@@ -12,3 +12,16 @@
 [3] --> Para actualizar o repositorio.
 
 ---------------------------------------------------------------------------
+
+[4] git tag -a R1 -m "Tag da versión 1. [Paso 4 de TrabajoIndividual.pdf]"
+[5] git branch Mejoras
+[6] git switch Mejoras
+
+(Inclúese o ficheiro pdf coas propostas de mellora na carpeta Control de cambios)
+(Actualízase o documento word á versión 2)
+(Adáptase a estrutura das plantillas á nova versión do word)
+
+[7] git add .
+[8] git commit -m "Inclúese o pdf coas propostas de mellora. Actualízase o documento word á v2. Adáptase a estrutura das plantillas á correspondente no word v2. [Pasos 5 e 6 de TrabajoIndividual.pdf]"
+
+---------------------------------------------------------------------------
