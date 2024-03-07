@@ -34,3 +34,17 @@
 [12] git commit -a -m "Bórrase o pdf coas propostas de mellora. [Pasos 8 e 9 de TrabajoIndividual.pdf]"
 
 ---------------------------------------------------------------------------
+[13.A] git tag -a R2 -m "Tag da versión 2. [Paso 9 de TrabajoIndividual.pdf]"
+(Actualízase o word á v3)
+[14.A] git commit -a -m "Actualización do documento do proceso á V3"
+---------------------------------------------------------------------------
+
+[13.B] git reset --hard HEAD^
+
+(Actualízase de novo o word á v3)
+(Inclúese a estrutura nova de carpetas, correspondente coa v3)
+
+[14.B] git add .
+[15] git commit -m "Actualización do proceso á versión v3. Reestruturación das carpetas á v3. [Paso 11 de TrabajoIndividual.pdf]"
+
+---------------------------------------------------------------------------
