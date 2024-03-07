@@ -1,0 +1,14 @@
+(Posicionados no directorio que actuará como repositorio)
+
+[0] cd Documents/GitHub/P6/P6_TraballoIndividual/
+[1] git init
+
+(Móntase a estrutura de carpetas)
+
+[2] git add .
+[3] git commit -m "Commit inicial. V1: estrutura de carpetas + documento"
+
+[2] --> Para engadir os novos arquivos á staging area.
+[3] --> Para actualizar o repositorio.
+
+---------------------------------------------------------------------------
