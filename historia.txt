@@ -25,3 +25,12 @@
 [8] git commit -m "Inclúese o pdf coas propostas de mellora. Actualízase o documento word á v2. Adáptase a estrutura das plantillas á correspondente no word v2. [Pasos 5 e 6 de TrabajoIndividual.pdf]"
 
 ---------------------------------------------------------------------------
+[9] git switch master
+[10] git merge Mejoras
+[11] git branch -d Mejoras
+
+(Bórrase o pdf de propostas de mellora)
+
+[12] git commit -a -m "Bórrase o pdf coas propostas de mellora. [Pasos 8 e 9 de TrabajoIndividual.pdf]"
+
+---------------------------------------------------------------------------
