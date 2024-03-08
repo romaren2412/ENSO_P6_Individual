@@ -1,69 +1,69 @@
 (Posicionados no directorio que actuará como repositorio)
 
-[0] cd Documents/GitHub/P6/P6_TraballoIndividual/
-[1] git init
+[0] cd Documents/GitHub/P6/P6_TraballoIndividual/                                   # --> Para posicionarse no directorio local      
+[1] git init                                                                        # --> Para inicializar o repositorio.
 
 (Móntase a estrutura de carpetas)
 
-[2] git add .
-[3] git commit -m "Commit inicial. V1: estrutura de carpetas + documento"
-
-[2] --> Para engadir os novos arquivos á staging area.
-[3] --> Para actualizar o repositorio.
+[2] git add .                                                                       # --> Para engadir os novos arquivos á staging area.
+[3] git commit -m "Commit inicial. V1: estrutura de carpetas + documento"           # --> Para actualizar o repositorio.
 
 ---------------------------------------------------------------------------
 
-[4] git tag -a R1 -m "Tag da versión 1. [Paso 4 de TrabajoIndividual.pdf]"
-[5] git branch Mejoras
-[6] git switch Mejoras
+[4] git tag -a R1 -m "Tag da versión 1. [Paso 4 de TrabajoIndividual.pdf]"          # --> Para establecer a etiqueta R1
+[5] git branch Mejoras                                                              # --> Para crear a rama 'Mejoras'
+[6] git switch Mejoras                                                              # --> Para establecer a nova rama 'Mejoras' como activa. Os futuros cambios almacenaránse nesta nova rama.
 
 (Inclúese o ficheiro pdf coas propostas de mellora na carpeta Control de cambios)
 (Actualízase o documento word á versión 2)
 (Adáptase a estrutura das plantillas á nova versión do word)
 
-[7] git add .
+[7] git add .                                                                       # --> Para engadir os novos arquivos (pdf + nova estrutura de plantillas) á staging area.
 [8] git commit -m "Inclúese o pdf coas propostas de mellora. Actualízase o documento word á v2. Adáptase a estrutura das plantillas á correspondente no word v2. [Pasos 5 e 6 de TrabajoIndividual.pdf]"
+                                                                                    # --> Para actualizar o repositorio
 
 ---------------------------------------------------------------------------
-[9] git switch master
-[10] git merge Mejoras
-[11] git branch -d Mejoras
+[9] git switch master                                                               # --> Para establecer a rama principal como activa
+[10] git merge Mejoras                                                              # --> Para fusionar os cambios feitos na rama 'Mejoras' dentro da rama principal
+[11] git branch -d Mejoras                                                          # --> Para eliminar a rama 'Mejoras'
 
 (Bórrase o pdf de propostas de mellora)
 
-[12] git commit -a -m "Bórrase o pdf coas propostas de mellora. [Pasos 8 e 9 de TrabajoIndividual.pdf]"
+[12] git commit -a -m "Bórrase o pdf coas propostas de mellora. [Pasos 8 e 9 de TrabajoIndividual.pdf]"             
+                                                                                    # --> Para actualizar o repositorio. Inclúe a opción -a en lugar dun 'git add .' previo xa que non hai novos arquivos para engadir,
+                                                                                          tan só é necesario confirmar as actualizacións de arquivos previamente rexistrados (neste caso, eliminar o pdf).
 
 ---------------------------------------------------------------------------
-[13.A] git tag -a R2 -m "Tag da versión 2. [Paso 9 de TrabajoIndividual.pdf]"
+[13.A] git tag -a R2 -m "Tag da versión 2. [Paso 9 de TrabajoIndividual.pdf]"       # --> Para establecer a etiqueta R2
 (Actualízase o word á v3)
-[14.A] git commit -a -m "Actualización do documento do proceso á V3"
+[14.A] git commit -a -m "Actualización do documento do proceso á V3"                # --> Para actualizar o repositorio. Inclúe a opción -a pola mesma razón que a liña 12 (actualizar o word).
 ---------------------------------------------------------------------------
 
-[13.B] git reset --hard HEAD^
+[13.B] git reset --hard HEAD^                                                       # --> Para volver ao estado do repositorio no commit anterior (o do paso [12])
 
 (Actualízase de novo o word á v3)
 (Inclúese a estrutura nova de carpetas, correspondente coa v3)
 
-[14.B] git add .
-[15] git commit -m "Actualización do proceso á versión v3. Reestruturación das carpetas á v3. [Paso 11 de TrabajoIndividual.pdf]"
+[14.B] git add .                                                                    # --> Esta vez si fai falta 'git add .' para engadir a nova estrutura de plantillas.
+[15] git commit -m "Actualización do proceso á versión v3. Reestruturación das carpetas á v3. [Paso 11 de TrabajoIndividual.pdf]"                   # --> Para actualizar o repositorio.
 
 ---------------------------------------------------------------------------
 
-[16] git tag -a R3 -m "Versión R3 [Paso 11 de TrabajoIndividual.pdf]"
+[16] git tag -a R3 -m "Versión R3 [Paso 11 de TrabajoIndividual.pdf]"               # --> Para establecer a etiqueta R3
 
-[17] git remote add origin https://github.com/romaren2412/ENSO_P6_Individual.git
-[18] git push origin master
-[19] git push origin --tags
+[17] git remote add origin https://github.com/romaren2412/ENSO_P6_Individual.git    # --> Para establecer como 'origin' o repositorio remoto de GitHub.
+[18] git push origin master                                                         # --> Para subir a rama master ao remoto
+[19] git push origin --tags                                                         # --> Para subir as etiquetas R1, R2 e R3 ao remoto
 
 ----------------------------------------------------------------------------
 
-[20] git pull origin master
+[20] git pull origin master                                                         # --> Para recuperar o estado da rama 'master' gardado en remoto
 
 (Modificase historia.txt)
 
-[21] git diff historia.txt
+[21] git diff historia.txt                                                          # --> Para observar as diferencias no arquivo 'historia.txt' antes e despois das novas modificacións.
 
 (Móstranse as diferencias)
 
-[22] git commit -a -m "Actualización final do repositorio. [Paso 15 de TrabajoIndividual.pdf]"
-[23] git push origin master
+[22] git commit -a -m "Actualización final do repositorio. [Paso 15 de TrabajoIndividual.pdf]"          # --> Para actualizar o repositorio (local). '-a' xa que non hai novos arquivos.
+[23] git push origin master                                                         # --> Para actualizar o repositorio remoto.
